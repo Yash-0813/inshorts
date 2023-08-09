@@ -17,11 +17,11 @@ app.use('/', Route);
 if (process.env.NODE_ENV === 'production') {
     app.use(express.static("client/build"));
 }
-const PORT = process.env.PORT || 8000;
+const PORT = 8000;
 
-const username = process.env.DB_USERNAME;
-const password = process.env.DB_PASSWORD;
-const URL = process.env.MONGODB_URI || `mongodb+srv://${username}:${password}@cluster0.6wbcpyc.mongodb.net/?retryWrites=true&w=majority`;
+// const username = process.env.DB_USERNAME;
+// const password = process.env.DB_PASSWORD;
+// const URL = process.env.MONGODB_URI || `mongodb+srv://${username}:${password}@cluster0.6wbcpyc.mongodb.net/?retryWrites=true&w=majority`;
 // mongodb + srv://yash_0813:<password>@cluster0.6wbcpyc.mongodb.net/
 
 // Connection(URL);
